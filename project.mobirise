@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "lite",
-    "currentPage": "index.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "lightamp",
       "title": "LightAMP",
@@ -34,7 +34,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.8.10",
     "siteFonts": [],
-    "uniqCompNum": 9,
+    "uniqCompNum": 10,
     "versionPublish": "4.8.10"
   },
   "pages": {
@@ -99,13 +99,94 @@
             }
           },
           "_name": "header5",
-          "_customHTML": "<section class=\"header5\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <select title=\"Vertical Align\" name=\"verticalAlign\">\n            <option value=\"flex-start\" selected>Top</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\">Bottom</option>\n        </select>\n        <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n            <option value=\"flex-start\">Left</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\" selected>Right</option>\n        </select>\n        <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"20\" max=\"100\" step=\"1\" value=\"38\">\n        \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1919.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#c6e2ba\">\n        </fieldset>\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fbf5f1\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay\"></div>\n    <div class=\"container\">    \n        <div class=\"mbr-row\">\n            <div class=\"content-wrap\">\n                <h1 class=\"mbr-section-title mbr-fonts-style align-left mbr-bold mbr-black l-spacing3\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">BE . COGNITIVE . I'M</h1>\n                \n                <p class=\"mbr-fonts-style mbr-text align-left mbr-black\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text, .mbr-section-btn\">about mental health</p>\n                \n                <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn-underline text-black\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">ENG</a> <a class=\"btn-underline text-black\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">DE</a> <a class=\"btn-underline text-black\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">LV</a> <a class=\"btn-underline text-black\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">RU</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header5\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <select title=\"Vertical Align\" name=\"verticalAlign\">\n            <option value=\"flex-start\" selected>Top</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\">Bottom</option>\n        </select>\n        <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n            <option value=\"flex-start\">Left</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\" selected>Right</option>\n        </select>\n        <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"20\" max=\"100\" step=\"1\" value=\"38\">\n        \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1919.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#c6e2ba\">\n        </fieldset>\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fbf5f1\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay\"></div>\n    <div class=\"container\">    \n        <div class=\"mbr-row\">\n            <div class=\"content-wrap\">\n                <h1 class=\"mbr-section-title mbr-fonts-style align-left mbr-bold mbr-black l-spacing3\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">BE . COGNITIVE . I'M</h1>\n                \n                <p class=\"mbr-fonts-style mbr-text align-left mbr-black\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text, .mbr-section-btn\">about mental health</p>\n                \n                <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn-underline text-black\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">ENG</a> <a class=\"btn-underline text-black\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">DE</a> <a class=\"btn-underline text-black\" href=\"page1.html\" data-app-placeholder=\"Type Text\">LV</a> <a class=\"btn-underline text-black\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">RU</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "reoWPzfWaY",
           "_anchor": "header5-2",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "title": "LV",
+        "order": 1
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "& when (@showTitle), (@showSubtitle)": {
+              ".mbr-row": {
+                "padding-top": "3rem"
+              }
+            },
+            ".card": {
+              "display": "flex",
+              "-webkit-flex-direction": "row",
+              "flex-direction": "row",
+              "&.lg-pb": {
+                "padding-bottom": "2rem"
+              },
+              ".card-img": {
+                "-webkit-flex-shrink": "0",
+                "flex-shrink": "0",
+                "width": "auto",
+                "margin-right": "1rem",
+                ".step": {
+                  "border-radius": "50%",
+                  "background": "@counterBg",
+                  "display": "flex",
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center",
+                  "-webkit-align-items": "center",
+                  "align-items": "center",
+                  "color": "@counterColor",
+                  "width": "calc(20px ~\"+ @{counterSize}rem\")",
+                  "height": "calc(20px ~\"+ @{counterSize}rem\")",
+                  "font-size": "~\"@{counterSize}rem\""
+                }
+              }
+            },
+            ".mbr-text": {
+              "padding": "0",
+              "margin": "0"
+            },
+            "@media (max-width: 991px)": {
+              ".card.md-pb": {
+                "padding-bottom": "2rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".card:not(.last-child)": {
+                "padding-bottom": "2rem"
+              },
+              ".card-box": {
+                "text-align": "left"
+              }
+            }
+          },
+          "_name": "features21",
+          "_customHTML": "<section class=\"features21\" group=\"Features\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Counter BG Color\" name=\"counterBg\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#000000\">\n        <input type=\"range\" inline title=\"Counter Size\" name=\"counterSize\" min=\"1\" max=\"6\" step=\"0.1\" value=\"1.7\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#fbf5f1\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ececec\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\"></div>\n    <div class=\"container align-center\">\n        <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">be . cognitive . &nbsp;I`m</h2>\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-light\" mbr-theme-style=\"display-6\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">mājaslapa par garīgo veselību</h3>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount != 4,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'lg-pb': cardsAmount > 4,\n                             'md-pb': cardsAmount > 2,\n                             'last-child': cardsAmount == 1}\">\n                <div class=\"card-img\">\n                    <div class=\"step\">\n                        <span>1</span>\n                    </div>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showCardTitle || showText\">\n                    <h3 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Problēmas</h3>\n                    <p class=\"mbr-text mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Šeit ir apkopoti raksti par dažādām dzīves problēmām, krīzēm un garīgiem traucējumiem.</p>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount != 4,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'lg-pb': cardsAmount > 4,\n                             'md-pb': cardsAmount > 2,\n                             'last-child': cardsAmount == 2}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-img\">\n                    <div class=\"step\">\n                        <span>2</span>\n                    </div>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showCardTitle || showText\">\n                    <h3 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Palīdzības veidi</h3>\n                    <p class=\"mbr-text mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Sadaļā ir raksti par palīdzības saņēmšanas iespējām, veidiem (psihoterapija, palīdzība pie krīzēm, medikamentoza ārstēšana).</p>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount != 4,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'lg-pb md-pb': cardsAmount > 4,\n                             'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-img\">\n                    <div class=\"step\">\n                        <span>3</span>\n                    </div>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showCardTitle || showText\">\n                    <h3 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Testi</h3>\n                    <p class=\"mbr-text mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Testi, kas ir domāti garīgas labklājības un psihiskas veselības pašnovērtēšanai.</p>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount != 4,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'md-pb': cardsAmount > 4,\n                             'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-img\">\n                    <div class=\"step\">\n                        <span>4</span>\n                    </div>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showCardTitle || showText\">\n                    <h3 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Pacientu tiesības</h3>\n                    <p class=\"mbr-text mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Iespēja iepazīties ar Latvijas Republikā un Eiropas Savienība spēkā esošiem likumiem psihiskas veselības jomā.</p>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4\" mbr-class=\"{'last-child': cardsAmount == 5}\" mbr-if=\"cardsAmount > 4\">\n                <div class=\"card-img\">\n                    <div class=\"step\">\n                        <span>5</span>\n                    </div>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showCardTitle || showText\">\n                    <h3 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Notikumi un jaunumi</h3>\n                    <p class=\"mbr-text mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Atklātas lekcijas, semināri, kongresi, citi pasākumi</p>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4\" mbr-class=\"{'last-child': cardsAmount == 6}\" mbr-if=\"cardsAmount > 5\">\n                <div class=\"card-img\">\n                    <div class=\"step\">\n                        <span>6</span>\n                    </div>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showCardTitle || showText\">\n                    <h3 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Konsultācijas</h3>\n                    <p class=\"mbr-text mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Jūs varāt uzrakstīt mums vēstuli vai pierakstīties uz konsultāciju</p>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_cid": "resJ1KETtt",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features21-9"
         }
       ]
     }
