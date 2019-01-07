@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "lite",
-    "currentPage": "index.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "lightamp",
       "title": "LightAMP",
@@ -40,7 +40,7 @@
         "url": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 18,
+    "uniqCompNum": 20,
     "versionPublish": "4.8.10"
   },
   "pages": {
@@ -323,6 +323,43 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".title": {
+              "margin-bottom": "20px"
+            },
+            ".icon-wrap": {
+              "display": "inline-block",
+              "width": "~\"@{iconsSize}rem\"",
+              "height": "~\"@{iconsSize}rem\"",
+              "margin": "1.5rem"
+            },
+            ".amp-iconfont": {
+              "color": "@iconsColor",
+              "font-size": "~\"@{iconsSize}rem\""
+            }
+          },
+          "_name": "social-buttons1",
+          "_customHTML": "<section class=\"social-buttons1\" group=\"Social\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"10\" value=\"7\" step=\"1\">\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"0.8\" max=\"5\" step=\"0.1\" value=\"2.8\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#a2a0a0\">\n        \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ececec\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container align-center\">\n        <h2 class=\"title mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".title, .icons-list\">\n            Follow Us\n        </h2>\n        <div class=\"icons-list\" mbr-list mbr-list-grow=\"iconsCount\">\n            <a href=\"http://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw\" target=\"_blank\" class=\"icon-wrap\">\n                <span mbr-icon class=\"amp-iconfont fa-youtube fa\"></span>\n            </a>\n            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" class=\"icon-wrap\">\n                <span mbr-icon class=\"amp-iconfont fa-facebook-f fa\"></span>\n            </a>\n            <a href=\"https://plus.google.com/u/0/+Mobirise/posts\" target=\"_blank\" class=\"icon-wrap\">\n                <span mbr-icon class=\"amp-iconfont fa-google-plus fa\"></span>\n            </a>\n            <a href=\"https://www.linkedin.com/in/mobirise\" target=\"_blank\" class=\"icon-wrap\">\n                <span mbr-icon class=\"amp-iconfont fa-linkedin-square fa\"></span></a>\n            <a href=\"https://www.pinterest.com/mobirise/\" target=\"_blank\" class=\"icon-wrap\">\n                <span mbr-icon class=\"amp-iconfont fa-pinterest-square fa\"></span>\n            </a>\n            <a href=\"https://instagram.com/mobirise/\" target=\"_blank\" class=\"icon-wrap\">\n                <span mbr-icon class=\"amp-iconfont fa-instagram fa\"></span>\n            </a>\n            <a href=\"https://twitter.com/mobirise\" target=\"_blank\" class=\"icon-wrap\">\n                <span mbr-icon class=\"amp-iconfont fa-twitter fa\"></span>\n            </a>\n        </div>\n    </div>\n</section>",
+          "_cid": "retbW5tDkn",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "social-buttons1-i"
         }
       ]
     }
