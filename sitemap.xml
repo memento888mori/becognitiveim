@@ -9,12 +9,6 @@
 		<loc>https://be.cognitive.im/atbildes.html</loc>
 	</url>
 	<url>
-		<loc>https://be.cognitive.im/index.html</loc>
-	</url>
-	<url>
-		<loc>https://be.cognitive.im/rus.html</loc>
-	</url>
-	<url>
 		<loc>https://be.cognitive.im/rus_fobia.html</loc>
 	</url>
 	<url>
@@ -28,5 +22,20 @@
 	</url>
 	<url>
 		<loc>https://be.cognitive.im/rus_burnout.html</loc>
+	</url>
+	<url>
+		<loc>https://be.cognitive.im/page10.html</loc>
+	</url>
+	<url>
+		<loc>https://be.cognitive.im/konsultacija.html</loc>
+	</url>
+	<url>
+		<loc>https://be.cognitive.im/index.html</loc>
+	</url>
+	<url>
+		<loc>https://be.cognitive.im/page12.html</loc>
+	</url>
+	<url>
+		<loc>https://be.cognitive.im/inde.html</loc>
 	</url>
 </urlset>
